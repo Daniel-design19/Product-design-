@@ -1,0 +1,97 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:#fff8f2;
+  color:blue;
+  padding:2rem;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+header{
+  text-align: center;
+  margin-bottom:3rem;
+ position:sticky;
+ top:0;
+ margin-top:0;
+}
+
+.Brand{
+  font-size:4rem;
+  color:#ff4081;
+}
+
+.tagline{
+  font-size:1.4rem;
+  font-style: italic;
+}
+
+.product-display{
+  display:flex;
+  gap:2rem;
+  flex-wrap:wrap;
+}
+
+.gallery{
+  flex:1;
+  position:relative;
+}
+
+.gallery input{
+  display:none;
+}
+
+.images{
+  position: relative;
+  height:400px;
+  overflow:hidden;
+  border-radius:10px;
+}
+
+.image{
+  width:100%;
+  position: absolute;
+  height:100%;
+}
+
+#img:checked ~ .images #slide1,
+#img:checked ~ .images #slide2,
+#img:checked ~ .images #slide3{
+  display:block;
+}
+
+.image img{
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+  
+.thumbnails{
+  margin-top:1rem;
+  display:flex;
+  justify-content: center;
+  gap:1rem;
+}
+
+.thumbnails label{
+  cursor:pointer;
+}
+
+.thumbnails img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+
+
+
